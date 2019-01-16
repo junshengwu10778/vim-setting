@@ -2,9 +2,7 @@
 
 
 
-# install vim-plug
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 
 # install prerequisite for vim80
 sudo apt-get install liblua5.1-dev luajit libluajit-5.1 python-dev ruby-dev libperl-dev libncurses5-dev libatk1.0-dev libx11-dev libxpm-dev libxt-dev
@@ -36,12 +34,16 @@ sudo apt-get install clang libclang-dev
 
 
 # ag install 
-apt-get install silversearcher-ag
+sudo apt-get install silversearcher-ag
 # command to find the package install location
 # dpkg -L package 
 # ex: dpkg -L clang
 
-
+sudo apt-get install curl
+# install vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+        
 # install plugin
 vim -c :PlugInstall
 
