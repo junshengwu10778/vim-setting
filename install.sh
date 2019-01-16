@@ -12,7 +12,6 @@ sudo mkdir /usr/include/lua5.1/include
 sudo cp /usr/include/lua5.1/*.h /usr/include/lua5.1/include/
 
 # install vim80
-cd /opt/
 git clone https://github.com/vim/vim
 cd vim/src
 make distclean # if vim was prev installed
