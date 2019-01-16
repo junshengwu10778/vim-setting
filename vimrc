@@ -37,6 +37,8 @@ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
+Plug 'junegunn/fzf.vim'
+
 Plug 'vim-airline/vim-airline'
 
 Plug 'Rip-Rip/clang_complete'
@@ -49,6 +51,7 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 
 Plug 'ervandew/supertab'
 
+Plug 'Shougo/neocomplete.vim'
 " Initialize plugin system
 call plug#end()
 
@@ -109,6 +112,15 @@ set completeopt=menu,menuone
 let g:clang_cpp_option= '-std=c++11'
 
 
+" UltiSnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" neocompelte 
+let g:neocomplete#enable_at_startup = 1
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
+" " Set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+
